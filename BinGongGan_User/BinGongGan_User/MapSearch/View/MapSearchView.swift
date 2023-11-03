@@ -55,7 +55,7 @@ struct MapSearchView: View {
                                     .font(Font.body1Regular)
                                     .foregroundColor(.gray)
                                     .onSubmit {
-                                        locationManager.isShowingList = true
+                                        locationManager.searchPlace(query: searchText)
                                     }
                             }
                         }
